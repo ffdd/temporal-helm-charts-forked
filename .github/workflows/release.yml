@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - feature/actions
 
 jobs:
   release:
@@ -27,8 +26,6 @@ jobs:
 
       - name: Run chart-releaser
         uses: ffdd/helm-chart-releaser-action@v1.6.0
-        with:
-          charts_dir: .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
