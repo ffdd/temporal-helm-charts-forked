@@ -26,7 +26,7 @@ jobs:
 
       - name: Helm Login
         run: |
-          echo ${{ secrets.HARBOR_TOKEN }} | helm registry login ${{ secrets.REGISTRY_URL }} -u r-devops-charts+github-actions --password-stdin
+          echo ${{ secrets.HARBOR_CI_WRITER_ACCESS_TOKEN }} | helm registry login ${{ secrets.REGISTRY_URL }} -u r-devops-charts+github-actions --password-stdin
 
       - name: Chart Release
         env:
