@@ -29,4 +29,6 @@ jobs:
           echo ${{ secrets.HARBOR_TOKEN }} | helm registry login ${{ secrets.REGISTRY_URL }} -u r-devops-charts+github-actions --password-stdin
 
       - name: Chart Release
+        env:
+          REPO_URL: ${{ secrets.REPO_URL }}
         run: ./release.sh
