@@ -12,7 +12,7 @@ on:
 
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: [ self-hosted, bigwave-ubuntu2204-small-ondemand-amd64 ]
 
     steps:
       - uses: actions/checkout@v3
