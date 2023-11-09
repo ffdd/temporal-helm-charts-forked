@@ -12,8 +12,6 @@ on:
 
 jobs:
   release:
-    runs-on: [ self-hosted, baker-ubuntu-small-spot-amd64 ]
-
     steps:
       - uses: actions/checkout@v3
         with:
