@@ -29,7 +29,6 @@ jobs:
         uses: ffdd/helm-chart-releaser-action@v1.6.0
         with:
           charts_dir: .
-          config: Chart.yaml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
