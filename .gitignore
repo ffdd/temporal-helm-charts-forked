@@ -1,2 +1,6 @@
 /Chart.lock
 /.idea
+/values/values.dev.yaml
+/charts/temporal/charts
+/charts/temporal/Chart.lock
+/charts/temporal/temporal.yaml
